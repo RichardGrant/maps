@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+
+<script type="text/javascript">
+
+	window.onerror = function(msg, url, linenumber) {
+	    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+	    return true;
+	}
+
+</script>
+</head>
+<body>
+	<div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal secondaryBG">
+<script type="text/javascript">
+
+</script>
+	</div>
+	<div class="views">
+		<div class="view view-main">
+			<div class="pages toolbar-through">
+				<div data-page="index" class="page">
+					<div class="page-content">
+						<div class="map-wrapper">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="toolbar">
+				<div class="toolbar-inner secondaryColor primaryBG">
+					<!-- Toolbar links -->
+					<div class="left">
+						<a href="#" class="link icon-only open-panel thirdColor secondaryBG panelopen">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

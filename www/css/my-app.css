@@ -1,0 +1,268 @@
+.primaryColor{/*light*/
+	color: #87e8ff;
+}
+.primaryBG,
+.data > .row
+{
+	background-color: #133340;
+}
+.secondaryColor,
+.search-wrapper.active .input-holder .search-icon.active{/*dark*/
+	color: #3999BF;
+}
+.secondaryBG,
+.search-wrapper.active .input-holder .search-icon.active{
+	background-color: #26667F;
+}
+.thirdColor{
+  color:#3999BF;/*yellow*/
+}
+.thirdBG{
+  background-color: #fbc403;
+}
+.borderRight{
+  border: 0;
+  border-right-width:1px;
+  border-style:solid;
+}
+.borderTop{
+  border: 0;
+  border-top-width:1px;
+  border-style:solid;
+}
+.PrimaryBorderColor{
+  border-color: #c9ddfc;
+}
+.SecondaryBorderColor{
+  border-color: white;
+}
+.navbar:after, .toolbar:before{
+	background:transparent;
+}
+.page{
+	background: white;
+    background-size: contain;
+}
+.page-content div[class*="col-"]{
+  padding: 5px;
+}
+div[class*="col-"] {
+  text-align: center;
+  border: 1px solid #ddd;
+  position: relative;
+}
+.row {
+  margin-bottom: 15px;
+}
+.page-content .tiles > .row > div{
+  padding: 20px;
+}
+.tiles > .row > div{
+    border: none;
+    font-size: 14px;
+    font-weight: 800;
+}
+.panel .content-block{
+}
+
+.toolbar-inner > p{
+	width:100%;
+	text-align:center;
+}
+.panel input[type="text"]{
+  width:100%;
+}
+.toolbar a.icon-only.panelopen{
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+.search-wrapper {
+    width:100%;
+}
+
+@media screen and (max-width: 560px)
+(index):225
+.search-wrapper.active .input-holder {
+    width: 200px;
+}
+.search-wrapper.active .input-holder {
+    border-radius: 2px;
+    width: 100%;
+    -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+
+.search-wrapper .input-holder {
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    width: 70px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background:white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+}
+
+.search-wrapper .input-holder .search-input {
+    width: 100%;
+    padding: 5px 50px 5px 16px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Open Sans", Arial, Verdana;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000;
+    -webkit-transform: translate(0, 60px);
+    -moz-transform: translate(0, 60px);
+    transform: translate(0, 60px);
+    -webkit-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.search-wrapper.active .input-holder .search-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.search-wrapper .input-holder .search-icon {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 6px;
+    padding: 0px;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    float: right;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+        font-size: 27px;
+}
+.search-wrapper.active .input-holder .search-icon.active .fa{
+  color:#fff;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+ .panel { 
+  width: 85%;
+ }
+body.with-panel-left-reveal .views,
+body.with-panel-left-reveal .panel-overlay {
+  -webkit-transform: translate3d(85%,0,0); 
+  -ms-transform: translate3d(85%,0,0);
+  transform: translate3d(85%,0,0); 
+}
+
+.map-wrapper, .map-wrapper > #map{
+  width: 100%;
+    height: 100%;
+}
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+
+.navbar-inner, .toolbar-inner{
+  padding:0;
+}
+
+.toolbar{
+  height:55px;
+}
+.toolbar *{
+  height:100% !important;
+}
+.toolbar .fa{
+  height:auto !important;
+}
+
+.profile > .img{
+  height:100px;
+}
+
+.profile > .name{
+  font-weight: 100;
+    color: white;
+    text-align: left;
+    padding: 4px 8px 0px 8px;
+    font-size: 11px;
+
+}
+
+
+.data{
+  margin-bottom:0;
+  overflow-y:scroll;
+}
+.data > .row{
+  display:table;
+  width:100%;
+  margin-bottom:2px;
+}
+.data > .row > div{
+  padding:12px 13px; 
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.data > .row > div:nth-child(1){
+}
+.data > .row > div.loc{
+  text-align:left;
+}
+.data > .row > div.dist{
+}
+.data > .row > div.dist >span{
+  display: inline-block;
+}
+.data > .row > div.dist >span,
+.data > .row > div.dist >span>span{
+      display: table;
+      width:100%;
+
+}
